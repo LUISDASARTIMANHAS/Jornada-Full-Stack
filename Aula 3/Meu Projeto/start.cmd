@@ -1,0 +1,1 @@
+start /realtime /min npm run dev
