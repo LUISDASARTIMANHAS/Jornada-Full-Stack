@@ -5,12 +5,15 @@
   "license": "ISC",
   "author": "LUISDASARTIMANHAS",
   "type": "module",
-  "main": "index.js",
+  "main": "./api/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --env-file=.env ./api/server.js",
+    "start": "node ./api/server.js"
   },
   "dependencies": {
     "express": "^4.21.2",
-    "npm-package-nodejs-utils-lda": "^1.0.23"
+    "mongodb": "^6.13.0",
+    "npm-package-nodejs-utils-lda": "^1.0.25"
   }
 }
