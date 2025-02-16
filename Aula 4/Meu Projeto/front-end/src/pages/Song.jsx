@@ -7,6 +7,7 @@ import {
   getRandomInt,
   getSongById,
   getSongsArrayFromArtist,
+  getRamdomIdFromArtist,
 } from "../js/utils";
 
 const Song = () => {
@@ -15,12 +16,8 @@ const Song = () => {
 
   const artistObj = getArtistByName(artist);
 
-  const songsArrayFromArtist = getSongsArrayFromArtist(artist);
-  const ramdomIndex = getRandomInt(songsArrayFromArtist.length - 1);
-  const ramdomIndex2 = getRandomInt(songsArrayFromArtist.length - 1);
-
-  const ramdomIdFromArtist = songsArrayFromArtist[ramdomIndex].id;
-  const ramdomId2FromArtist = songsArrayFromArtist[ramdomIndex2].id;
+  const ramdomIdFromArtist = getRamdomIdFromArtist(artist);
+  const ramdomId2FromArtist = getRamdomIdFromArtist(artist);
 
   return (
     <div className="song">
@@ -31,7 +28,7 @@ const Song = () => {
       </div>
 
       <div className="song__bar">
-        <Link to={`/artist/${artistObj.id}`} className="song_artist-image">
+        <Link to={`/artist/${artistObj._id}`} className="song_artist-image">
           <img
             width={75}
             height={75}
@@ -44,6 +41,7 @@ const Song = () => {
           duration={duration}
           ramdomIdFromArtist={ramdomIdFromArtist}
           ramdomId2FromArtist={ramdomId2FromArtist}
+          audio={audio}
         />
 
         <div>

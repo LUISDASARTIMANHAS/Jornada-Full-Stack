@@ -8,16 +8,16 @@ import {
   getArtistById,
   getArtistByName,
   getRandomInt,
-  getSongObjById,
+  getSongById,
   getSongsArrayFromArtist,
+  getRamdomIdFromArtist,
 } from "../js/utils";
 
 const Artist = () => {
   const { id } = useParams();
   const { name, banner } = getArtistById(id);
   const songsArrayFromArtist = getSongsArrayFromArtist(name);
-  const ramdomIndex = getRandomInt(songsArrayFromArtist.length - 1);
-  const ramdomIdFromArtist = songsArrayFromArtist[ramdomIndex].id;
+  const ramdomIdFromArtist = getRamdomIdFromArtist(name);
 
   return (
     <div className="artist">
