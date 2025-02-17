@@ -12,8 +12,10 @@
     "start": "node ./api/server.js"
   },
   "dependencies": {
+    "deploy": "file:..",
     "express": "^4.21.2",
     "mongodb": "^6.13.0",
-    "npm-package-nodejs-utils-lda": "^1.0.25"
+    "npm-package-nodejs-utils-lda": "^1.0.25",
+    "path": "^0.12.7"
   }
 }
