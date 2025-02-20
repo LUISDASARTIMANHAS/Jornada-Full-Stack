@@ -1,7 +1,6 @@
 // API significa Application Programming Interface
 import express from "express";
-import { artistArray } from "../../front-end/src/assets/database/artists.js";
-import { songsArray } from "../../front-end/src/assets/database/songs.js";
+import cors from "cors";
 const app = express();
 
 import {
@@ -29,11 +28,12 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(cacheMiddleware);
 app.use(setCacheHeaders);
 app.use(httpsSecurityMiddleware);
+app.use(cors());
 
 app.use(express.json());
 checkHeaderMiddleware(app);
 
-app.get("/artist",async (req, res) => {
+app.get("/artists",async (req, res) => {
   res.send(await getArtists());
 });
 
