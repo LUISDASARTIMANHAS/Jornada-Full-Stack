@@ -1,0 +1,19 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "LUISDASARTIMANHAS",
+  "type": "module",
+  "main": "./api/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch --env-file=.env ./api/server.js",
+    "start": "node ./api/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.13.0",
+    "npm-package-nodejs-utils-lda": "^1.0.25"
+  }
+}
