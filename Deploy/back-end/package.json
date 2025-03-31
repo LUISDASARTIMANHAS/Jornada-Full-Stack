@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "deploy": "file:..",
-    "express": "^4.21.2",
+    "express": "^5.0.0",
     "mongodb": "^6.13.0",
     "npm-package-nodejs-utils-lda": "^1.0.25",
     "path": "^0.12.7"
