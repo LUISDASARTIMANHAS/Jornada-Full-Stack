@@ -21,7 +21,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "axios": "^1.7.9",
     "deploy": "file:..",
-    "dotenv": "^16.4.7",
+    "dotenv": "^17.0.0",
     "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.0.0",
