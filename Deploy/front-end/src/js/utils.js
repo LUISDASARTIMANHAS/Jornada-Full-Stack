@@ -10,12 +10,14 @@ function getSongsArrayFromArtist(artist) {
 }
 
 function getSongById(id) {
-  return songsArray.filter((currSongObj) => currSongObj._id === id)[0];
+  const song = songsArray.filter((currSongObj) => currSongObj._id === Number(id))[0];
+  return song;
 }
 
 // get artists
 function getArtistById(id) {
-  return artistArray.filter((currArtistObj) => currArtistObj._id === id)[0];
+  const artist = artistArray.filter((currArtistObj) => currArtistObj._id === Number(id))[0];
+  return artist;
 }
 
 function getArtistByName(name) {

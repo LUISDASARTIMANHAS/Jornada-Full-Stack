@@ -10,7 +10,7 @@ import {
   getRandomInt,
   getSongById,
   getSongsArrayFromArtist,
-  getRamdomIdFromArtist,
+  getRamdomIdFromArtist
 } from "../js/utils";
 
 const Artist = () => {
