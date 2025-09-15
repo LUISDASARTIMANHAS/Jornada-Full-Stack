@@ -9,7 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch --env-file=.env ./api/server.js",
-    "start": "node ./api/server.js"
+    "start": "npm run update && node --watch ./api/server.js",
+    "update": "npm run prepare-env && npx npm-check-updates -u && npm install",
+    "prepare-env": "node src/js/createEnvIfMissing.js"
   },
   "dependencies": {
     "deploy": "file:..",
