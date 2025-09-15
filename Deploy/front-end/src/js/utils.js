@@ -2,6 +2,7 @@
 import React from "react";
 import { artistArray } from "../assets/database/artists";
 import { songsArray } from "../assets/database/songs";
+import axios from "axios";
 import { UNSAFE_getPatchRoutesOnNavigationFunction } from "react-router-dom";
 
 function getSongsArrayFromArtist(artist) {
@@ -64,6 +65,17 @@ function getAudioProgress(currentTimeInSeconds,durationInSeconds){
   return `${progress * 100}%`
 }
 
+async function onErrorTelemetria(error){
+  console.error("Erro ao detectado: ", error);
+	await axios.post(`${url}/telemetria`, "Erro ao detectado: " + error)
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
+}
+
 export {
   getRandomInt,
   getRandomBin,
@@ -76,4 +88,5 @@ export {
   getSongsArrayFromArtist,
   getSongById,
   getRamdomIdFromArtist,
+  onErrorTelemetria
 };
