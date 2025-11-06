@@ -16,7 +16,7 @@
   "dependencies": {
     "deploy": "file:..",
     "express": "^5.0.0",
-    "mongodb": "^6.13.0",
+    "mongodb": "^7.0.0",
     "npm-package-nodejs-utils-lda": "^1.0.25",
     "path": "^0.12.7"
   }
