@@ -15,7 +15,7 @@
     "cors": "^2.8.5",
     "deploy": "file:..",
     "express": "^5.0.0",
-    "mongodb": "^6.13.0",
+    "mongodb": "^7.0.0",
     "path": "^0.12.7"
   }
 }

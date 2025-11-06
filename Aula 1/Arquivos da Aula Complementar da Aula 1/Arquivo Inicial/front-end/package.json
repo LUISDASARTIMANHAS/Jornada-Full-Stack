@@ -21,7 +21,7 @@
     "dotenv": "^17.0.0",
     "express": "^5.0.0",
     "http-server": "^14.1.1",
-    "mongodb": "^6.13.0",
+    "mongodb": "^7.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5"
