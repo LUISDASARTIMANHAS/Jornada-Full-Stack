@@ -18,7 +18,7 @@
     "@fortawesome/react-fontawesome": "^3.0.0",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
-    "dotenv": "^17.0.0",
+    "dotenv": "^18.0.0",
     "express": "^5.0.0",
     "http-server": "^14.1.1",
     "mongodb": "^7.0.0",
